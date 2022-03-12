@@ -20,7 +20,7 @@ You can disable this mechanism by adding asp-antiforgery="false" attribute in a 
 
 # Important to know
 
-Even thow that ASP.NET adds a anti forgery token it doesn't verify it. To do so add the `[ValidateAntiForgeryToken]` to an action or a controller. 
+Even though that ASP.NET adds a anti forgery token it doesn't verify it. To do so add the `[ValidateAntiForgeryToken]` to an action or a controller. 
 
 Segment from Pages/Index.cshtml.cs with `[ValidateAntiForgeryToken]`
 
