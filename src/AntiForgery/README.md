@@ -4,7 +4,7 @@ It's a mechanism that doesn't allow CSRF attacks to happen.
 
 # What is a CSRF attack? 
 
-CSRF stands for Cross Site Forgery Attack. Users might be send to a malicious site with a form sending a POST request to your website.
+CSRF stands for Cross Site Request Forgery Attack. Users might be send to a malicious site with a form sending a POST request to your website.
 A browser by default would add cookies of your site alongside the request like for example the session token logging you in automatically.
 The attacker might make an action like for example transfering all your money from your bank account into theirs, the browser would add the Banking Site cookies as it always does because the request is sent there. You will be automatically logged in into your wallet and all your money would be sent to the attacker.
 
