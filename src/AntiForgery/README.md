@@ -13,6 +13,7 @@ The attacker might make an action like for example transfering all your money fr
 In razor pages this is autoamtically done. 2 tokens would be generated when sending the user a form as a response:
 - A Token for the user.
 - A Token for the server.
+
 And when the user would submit the form, alongside the usual cookie the token would also be sent and verified in the server. These tokens are called the anti forgery tokens.
 In this way the attacker website request would be rejecected because they don't have a anti forgery token which would always be given to them if the official website would have been loaded.
 You can disable this mechanism by adding asp-antiforgery="false" attribute in a `<form>` tag (not reccomended).
