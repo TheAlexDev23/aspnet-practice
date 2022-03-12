@@ -16,3 +16,16 @@ In razor pages this is autoamtically done. 2 tokens would be generated when send
 And when the user would submit the form, alongside the usual cookie the token would also be sent and verified in the server. These tokens are called the anti forgery tokens.
 In this way the attacker website request would be rejecected because they don't have a anti forgery token which would always be given to them if the official website would have been loaded.
 You can disable this mechanism by adding asp-antiforgery="false" attribute in a `<form>` tag (not reccomended).
+
+# Important to know
+
+Even thow that ASP.NET adds a anti forgery token it doesn't verify it. To do so add the `[ValidateAntiForgeryToken]` to an action or a controller. 
+
+Segment from Pages/Index.cshtml.cs with `[ValidateAntiForgeryToken]`
+
+```csharp
+[ValidateAntiForgeryToken] // This would verify the token sent alongside the request
+public void OnPost() {
+    _logger.LogInformation(LogInBindingModel.UserName); //Log the information submited by the user in the form
+}
+```
