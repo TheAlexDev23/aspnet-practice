@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSTS", "src\HSTS\HSTS.cspro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntiForgery", "src\AntiForgery\AntiForgery.csproj", "{5D95C999-506A-47E3-9552-AF676E15E17F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingCustomTagHelpers", "src\CreatingCustomTagHelpers\CreatingCustomTagHelpers.csproj", "{B3FDFD38-8A95-4C3D-B037-FE373A699E21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{5D95C999-506A-47E3-9552-AF676E15E17F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D95C999-506A-47E3-9552-AF676E15E17F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D95C999-506A-47E3-9552-AF676E15E17F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FDFD38-8A95-4C3D-B037-FE373A699E21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FDFD38-8A95-4C3D-B037-FE373A699E21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FDFD38-8A95-4C3D-B037-FE373A699E21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FDFD38-8A95-4C3D-B037-FE373A699E21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
