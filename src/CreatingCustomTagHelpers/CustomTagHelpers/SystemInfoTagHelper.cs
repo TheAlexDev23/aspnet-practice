@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Text;
 using System.Runtime.InteropServices;
 
-namespace CustomTagHelpers;
+namespace CreatingCustomTagHelpers.CustomTagHelpers;
 
 //This makes our class target system-info elements (it's not case sensitive)
 [HtmlTargetElement("system-info")]
