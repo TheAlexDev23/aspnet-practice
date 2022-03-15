@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div>
+    <h1>Currency Conversion form</h1>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="_currencyConversionModel.ConvertFrom"></label>
+            <input class="form-control" asp-for="_currencyConversionModel.ConvertFrom">
+            <span asp-validation-for="_currencyConversionModel.ConvertFrom"></span>
+
+        </div>
+
+        <div class="form-group">
+            <label asp-for="_currencyConversionModel.ConvertTo"></label>
+            <input class="form-control" asp-for="_currencyConversionModel.ConvertTo">
+            <span asp-validation-for="_currencyConversionModel.ConvertTo"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Submit form</button>
+        </div>
+    </form>
+</div>
